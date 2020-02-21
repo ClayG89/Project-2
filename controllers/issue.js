@@ -48,8 +48,20 @@ issueRouter.get('/', (req, res) => {
     });
 });
 
+issueRouter.get('/:issueId/edit', (req, res) => {
+    Issue.findById(req.params.issueId).then(issue => {
+        res.render('issues/editIssueForm', { issue });
+    });
+});
+
 issueRouter.post('/', (req, res) => {
     Issue.create(req.body).then(() => {
+        res.redirect('/issues');
+    });
+});
+
+issueRouter.put('/:issueId', (req, res) => {
+    Issue.findByIdAndUpdate(req.params.issueId, req. body).then(issue => {
         res.redirect('/issues');
     });
 });

@@ -4,6 +4,8 @@
 <p>{{ issue.status }}</p>
 <p>{{ issue.priority }}</p>
 
+<a href="/issues/{{ issue.id }}/edit">Edit issue</a>
+
 <form method="POST" action="/issues/{{ issue.id }}?_method=DELETE">
     <input type="submit" value="Delete Issue"/>
 </form>
