@@ -44,6 +44,12 @@ issueRouter.get('/', (req, res) => {
     });
 });
 
+issueRouter.delete('/:issueId', (req, res) => {
+    Issue.findByIdAndDelete(req.params.issueId).then(() => {
+        res.redirect('/issues');
+    });
+});
+
 /* Step 6
  *
  * Export the router from the file.

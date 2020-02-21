@@ -3,3 +3,7 @@
 <p>{{ issue.createdAt }}</p>
 <p>{{ issue.status }}</p>
 <p>{{ issue.priority }}</p>
+
+<form method="POST" action="/issues/{{ issue.id }}?_method=DELETE">
+    <input type="submit" value="Delete Issue"/>
+</form>
