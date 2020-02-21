@@ -32,6 +32,10 @@ const issueRouter = express.Router()
  * TODO: Put all request handlers here
  */
 
+issueRouter.get('/new', (req, res) => {
+    res.render('issues/newIssueForm');
+});
+
 issueRouter.get('/:issueId', (req, res) => {
     Issue.findById(req.params.issueId).then(issue => {
         res.render('issues/issue', { issue });
@@ -41,6 +45,12 @@ issueRouter.get('/:issueId', (req, res) => {
 issueRouter.get('/', (req, res) => {
     Issue.find().then(issues => {
         res.render('issues/issues', { issues });
+    });
+});
+
+issueRouter.post('/', (req, res) => {
+    Issue.create(req.body).then(() => {
+        res.redirect('/issues');
     });
 });
 
