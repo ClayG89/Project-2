@@ -33,11 +33,11 @@ const truckRouter = express.Router()
  */
 
 truckRouter.get('/new', (req, res) => {
-    res.render('issues/newTruckForm');
+    res.render('trucks/newTruckForm');
 });
 
-truckRouter.get('/:issueId', (req, res) => {
-    Issue.findById(req.params.truckId).then(truck => {
+truckRouter.get('/:truckId', (req, res) => {
+    Truck.findById(req.params.truckId).then(truck => {
         res.render('trucks/truck', { truck });
     });
 });
@@ -61,13 +61,13 @@ truckRouter.post('/', (req, res) => {
 });
 
 truckRouter.put('/:truckId', (req, res) => {
-    Truck.findByIdAndUpdate(req.params.issueId, req. body).then(truck => {
+    Truck.findByIdAndUpdate(req.params.truckId, req. body).then(truck => {
         res.redirect('/trucks');
     });
 });
 
 truckRouter.delete('/:truckId', (req, res) => {
-    Truck.findByIdAndDelete(req.params.issueId).then(() => {
+    Truck.findByIdAndDelete(req.params.truckId).then(() => {
         res.redirect('/trucks');
     });
 });
