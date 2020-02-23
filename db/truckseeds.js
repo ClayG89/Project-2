@@ -2,10 +2,11 @@ const Truck = require('../models/truck.js');
 
 const newTrucks = [
     {
-        description: 'Server crashed',
-        createdAt: new Date(1970, 1, 1),
-        status: 'open',
-        priority: 'Low',
+        make: 'Peterbilt',
+        modelYear: '2016-389',
+        status: 'available',
+        color: 'black',
+        engine: 'Cummins isx',
     },
 ];
 
