@@ -17,7 +17,7 @@ const methodOverride = require('method-override')
  * import routers from controllers/
  *
  */
-const issueRouter = require('./controllers/issue.js')
+const truckRouter = require('./controllers/truck.js')
 
 
 /* Step 3
@@ -61,7 +61,7 @@ app.set('view engine', 'hbs')
  * add router for the application to use. The first argument is a prefix to all
  * the paths defined in the router.
  */
-app.use('/issues', issueRouter)
+app.use('/trucks', truckRouter)
 
 /* Step 5
  *

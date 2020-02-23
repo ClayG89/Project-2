@@ -1,6 +1,6 @@
-const Issue = require('../models/issue.js');
+const Truck = require('../models/truck.js');
 
-const newIssues = [
+const newTrucks = [
     {
         description: 'Server crashed',
         createdAt: new Date(1970, 1, 1),
@@ -9,8 +9,8 @@ const newIssues = [
     },
 ];
 
-Issue.deleteMany().then(() => {
-    return Issue.create(newIssues);
+Truck.deleteMany().then(() => {
+    return Truck.create(newTrucks);
 }).then(() => {
     console.log('Database seeded');
 });

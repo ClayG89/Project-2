@@ -14,28 +14,31 @@ const mongoose = require('../db/connection.js')
  * TODO: create model schema 
  *
  */
-const Issue = new mongoose.Schema({
-    description: {
+const Trailer = new mongoose.Schema({
+    make: {
         type: String,
         required: true,
     },
-    createdAt: {
-        type: Date,
-        default: Date.now,
+    model_year: {
+        type: String,
+        required: true,
     },
     status: {
         type: String,
-        default: 'open',
-    },
-    priority: {
-        type: String,
+        default: 'available',
         required: true,
-        enum: ['High', 'Medium', 'Low'],
+        enum: ['available', 'unavailable', 'coming soon'],
     },
+    type: {
+        type: String,
+        defoult: 'van',
+        required: true,
+        enum: ['van', 'flatbed', 'reefer'],
+    }
 })
 
 /* Step 3
  *
  * TODO: export the schema
  */
-module.exports = mongoose.model('Issue', Issue);
+module.exports = mongoose.model('Trailer', Trailer);
