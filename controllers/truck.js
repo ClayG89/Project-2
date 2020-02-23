@@ -15,7 +15,8 @@ const express = require('express')
  * controller you need.
  * 
  */
-const Truck = require('../models/truck.js')
+const Truck = require('../models/Truck.js')
+
 
 /* Step 3 
  * 
