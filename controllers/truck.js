@@ -33,7 +33,7 @@ const truckRouter = express.Router()
  */
 
 truckRouter.get('/new', (req, res) => {
-    res.render('trucks/newTruckForm');
+    res.render('trucks/addTruck');
 });
 
 truckRouter.get('/:truckId', (req, res) => {
@@ -50,7 +50,7 @@ truckRouter.get('/', (req, res) => {
 
 truckRouter.get('/:truckId/edit', (req, res) => {
     Truck.findById(req.params.truckId).then(truck => {
-        res.render('trucks/editTruckForm', { truck });
+        res.render('trucks/editTruck', { truck });
     });
 });
 
@@ -77,4 +77,4 @@ truckRouter.delete('/:truckId', (req, res) => {
  * Export the router from the file.
  *
  */
-module.exports = issueRouter;
+module.exports = truckRouter;

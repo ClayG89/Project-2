@@ -16,7 +16,7 @@
  */
 // const TemplateModelSchema = new mongoose.Schema({
 //   name: String
-})
+//})
 
 /* Step 3
  *
