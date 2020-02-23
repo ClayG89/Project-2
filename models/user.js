@@ -24,7 +24,7 @@ const User = new mongoose.Schema({
         required: true,
     },
     title: {
-        type: Number,
+        type: String,
         required: true,
     },
     loginId: {
