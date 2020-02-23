@@ -15,7 +15,7 @@ const express = require('express')
  * controller you need.
  * 
  */
-const Trailer = require('../models/trailer.js')
+const Trailer = require('../models/Trailer.js')
 
 /* Step 3 
  * 

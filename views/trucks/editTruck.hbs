@@ -1,12 +1,14 @@
-<form method="POST" action="/rucks/{{ truck.id }}?_method=PUT">
+<form method="POST" action="/trucks/{{ truck.id }}?_method=PUT">
 
   <!--
     Template for creating input form for a string object key called stringMember
     NOTE: for numeric input fields use `type="number"`
   --->
     <input type="text" value="{{ truck.make }}" placeholder="Name" name="make"/>
-    <input type="text" value="{{ truck.model }}" placeholder="Status" name="model"/>
-    <input type="text" value="{{ issue.priority }}" placeholder="Priority" name="priority"/>
+    <input type="text" value="{{ truck.modelYear }}" placeholder="Model Year" name="modelYear"/>
+    <input type="text" value="{{ truck.status }}" placeholder="Status" name="status"/>
+    <input type="text" value="{{ truck.color }}" placeholder="Color" name="color"/>
+    <input type="text" value="{{ truck.engine }}" placeholder="Engine" name="engine"/>
 
-    <input type="submit" value="Update Issue"/>
+    <input type="submit" value="Update Truck"/>
 </form>
