@@ -15,25 +15,25 @@ const mongoose = require('../db/connection.js')
  *
  */
 const Trailer = new mongoose.Schema({
-    make: {
+    Make: {
         type: String,
         required: true,
     },
-    model_year: {
+    // model_year: {
+    //     type: String,
+    //     required: true,
+    // },
+    Status: {
         type: String,
+        default: 'Available',
         required: true,
+        enum: ['Available', 'Unavailable', 'Coming soon'],
     },
-    status: {
+    Type: {
         type: String,
-        default: 'available',
+        default: 'Van',
         required: true,
-        enum: ['available', 'unavailable', 'coming soon'],
-    },
-    type: {
-        type: String,
-        defoult: 'van',
-        required: true,
-        enum: ['van', 'flatbed', 'reefer'],
+        enum: ['Van', 'Flatbed', 'Reefer'],
     }
 })
 

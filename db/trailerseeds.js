@@ -1,6 +1,6 @@
 const Trailer = require('../models/trailer.js');
 
-const newTrucks = [
+const newTrailers = [
     {
         make: 'Great Dane',
         modelYear: '2016-Sahara',
@@ -10,7 +10,7 @@ const newTrucks = [
 ];
 
 Trailer.deleteMany().then(() => {
-    return Truck.create(newTrailer);
+    return Trailer.create(newTrailer);
 }).then(() => {
     console.log('Database seeded');
 });
