@@ -43,7 +43,7 @@ trailerRouter.get('/:trailerId', (req, res) => {
 });
 
 trailerRouter.get('/', (req, res) => {
-    Trailer.find().then(trailer => {
+    Trailer.find().then(trailers => {
         res.render('trailers/trailers', { trailers });
     });
 });
