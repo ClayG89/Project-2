@@ -1,13 +1,13 @@
 <div class="trailer-show-page">
-    <h2>Current truck</h2>
+    <h2>Current trailer</h2>
     <p>{{ trailer.make }}</p>
-    <p>{{ trailer.modelYear }}</p>
+    {{!-- <p>{{ trailer.modelYear }}</p> --}}
     <p>{{ trailer.status }}</p>
     <p>{{ trailer.type }}</p>
 
-    <a href="/issues/{{ truck.id }}/edit">Edit truck</a>
+    <a href="/trailers/{{ trailer.id }}/edit">Edit trailer</a>
 
-    <form method="POST" action="/trucks/{{ truck.id }}?_method=DELETE">
-        <input type="submit" value="Delete Truck"/>
+    <form method="POST" action="/trailers/{{ trailer.id }}?_method=DELETE">
+        <input type="submit" value="Delete Trailer"/>
     </form>
 </div>

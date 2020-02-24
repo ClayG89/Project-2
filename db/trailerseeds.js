@@ -3,9 +3,9 @@ const Trailer = require('../models/trailer.js');
 const newTrailers = [
     {
         make: 'Great Dane',
-        modelYear: '2016-Sahara',
+        // modelYear: '2016-Sahara',
         status: 'available',
-        type: 'van',
+        type: 'Van',
     },
 ];
 
