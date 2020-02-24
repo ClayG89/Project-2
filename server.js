@@ -18,7 +18,8 @@ const methodOverride = require('method-override')
  *
  */
 const truckRouter = require('./controllers/truck.js')
-
+const trailerRouter = require('./controllers/trailer.js')
+const userRouter = require('./controllers/user.js')
 
 /* Step 3
  *
@@ -62,6 +63,10 @@ app.set('view engine', 'hbs')
  * the paths defined in the router.
  */
 app.use('/trucks', truckRouter)
+
+app.use('/trailers', trailerRouter)
+
+app.use('/users', userRouter)
 
 /* Step 5
  *

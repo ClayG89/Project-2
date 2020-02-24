@@ -67,7 +67,7 @@ userRouter.put('/:userId', (req, res) => {
     });
 });
 
-suserRouter.delete('/:userId', (req, res) => {
+userRouter.delete('/:userId', (req, res) => {
     User.findByIdAndDelete(req.params.userId).then(() => {
         res.redirect('/users');
     });
