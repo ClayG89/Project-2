@@ -21,7 +21,7 @@ const truckRouter = require('./controllers/truck.js')
 const trailerRouter = require('./controllers/trailer.js')
 const userRouter = require('./controllers/user.js')
 
-console.log(userRouter)
+// console.log(userRouter)
 /* Step 3
  *
  * Register middleware...

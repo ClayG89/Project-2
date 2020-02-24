@@ -4,11 +4,40 @@
     Template for creating input form for a string object key called stringMember
     NOTE: for numeric input fields use `type="number"`
   --->
-    <input type="text" value="{{ truck.make }}" placeholder="Name" name="make"/>
-    <input type="text" value="{{ truck.modelYear }}" placeholder="Model Year" name="modelYear"/>
-    <input type="text" value="{{ truck.status }}" placeholder="Status" name="status"/>
-    <input type="text" value="{{ truck.color }}" placeholder="Color" name="color"/>
-    <input type="text" value="{{ truck.engine }}" placeholder="Engine" name="engine"/>
+  <label for="Options">Options</label>
+<select id="Options" name="Make" value="Options">
+        
+    
+        <option value="579 2020">Peterbilt 579 2020</option>
+        <option value="579 2021">Peterbilt 579 2021</option>
+        <option value="389 2020">Peterbilt 389 2020</option>
+        <option value="389 2021">Peterbilt 389 2021</option>
+        <option value="T680 2020">Kenworth T680 2020</option>
+        <option value="T680 2021">Kenworth T680 2021</option>
+        <option value="W990 2020">Kenworth W990 2020</option>
+        <option value="W990 2021">Kenworth W990 2021</option>
+
+</select>
+
+    <select name="Color">
+        <option value="White">White</option>
+        <option value="Black">Black</option>
+        <option value="Red">Red</option>
+        <option value="Blue">Blue</option>
+        <option value="Yellow">Yellow</option>
+    </select>
+
+    <select name="Status">
+        <option value="Available">Available</option>
+        <option value="Not available">Not available</option>
+        <option value="Coming soon">Coming soon</option>
+    </select>
+    
+    <select name="Engine">
+        <option value="Cummins">Cummins</option>
+        <option value="Paccar">Paccar</option>
+        <option value="Detroit">Detroit</option>
+    </select>
 
     <input type="submit" value="Update Truck"/>
 </form>

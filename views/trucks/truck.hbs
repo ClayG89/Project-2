@@ -1,12 +1,11 @@
 <div class="truck-show-page">
     <h2>Current truck</h2>
     <p>{{ truck.make }}</p>
-    <p>{{ truck.modelYear }}</p>
     <p>{{ truck.status }}</p>
     <p>{{ truck.color }}</p>
     <p>{{ truck.engine }}</p>
 
-    <a href="/issues/{{ truck.id }}/edit">Edit truck</a>
+    <a href="/trucks/{{ truck.id }}/edit">Edit truck</a>
 
     <form method="POST" action="/trucks/{{ truck.id }}?_method=DELETE">
         <input type="submit" value="Delete Truck"/>

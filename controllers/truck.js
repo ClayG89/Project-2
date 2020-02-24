@@ -56,6 +56,7 @@ truckRouter.get('/:truckId/edit', (req, res) => {
 });
 
 truckRouter.post('/', (req, res) => {
+    console.log(req.body)
     Truck.create(req.body).then(() => {
         res.redirect('/trucks');
     });

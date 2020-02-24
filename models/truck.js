@@ -15,25 +15,25 @@ const mongoose = require('../db/connection.js')
  *
  */
 const Truck = new mongoose.Schema({
-    make: {
+    Make: {
         type: String,
         required: true,
     },
     model_year: {
         type: String,
-        required: true,
+        // required: true,
     },
-    status: {
+    Status: {
         type: String,
         default: 'available',
         required: true,
-        enum: ['available', 'unavailable', 'coming soon'],
+        enum: ['Available', 'Unavailable', 'Coming soon'],
     },
-    color: {
+    Color: {
         type: String,
         required: true,
     },
-    engine: {
+    Engine: {
         type: String,
         required: true,
     }

@@ -3,7 +3,6 @@ const Truck = require('../models/truck.js');
 const newTrucks = [
     {
         make: 'Peterbilt',
-        modelYear: '2016-389',
         status: 'available',
         color: 'black',
         engine: 'Cummins isx',
