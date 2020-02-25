@@ -1,8 +1,11 @@
  body {
     font-family: sans-serif;
-    background-image: url("/Users/macbookpro/ga-sei/project-2/public/The-Long-Road-Ahead.jpg");
-    background-size: auto;
-    background-position: center;
+    background-image: url("The-Long-Road-Ahead.jpg");
+    background-size: cover;
+ }
+ .peterbiltFirst img {
+    border-radius: 8px;
+    width: 300px;
  }
  .truck-show-page {
     color: blue;
