@@ -1,0 +1,55 @@
+<form method="POST" action="/users/{{ user.id }}?_method=PUT">
+
+  <!--
+    Template for creating input form for a string object key called stringMember
+    NOTE: for numeric input fields use `type="number"`
+  --->
+  <label for="Firstname">First Name</label>
+<select id="Firstname" name="Firstname" value="Firstname">
+        
+        <option value="Clay">Clay</option>
+        <option value="Brett">Brett</option>
+        <option value="Brenda">Brenda</option>
+        <option value="Bruce">Bruce</option>
+        <option value="Lynn">Lynn</option>
+        <option value="Kevin">Kevin</option>
+
+</select>
+
+  <label for="Lastname">Last name</label>
+<select id="Lastname" name="Lastname" value="Lastname">
+
+        <option value="Guess">Guess</option>
+        <option value="Garland">Garland</option>
+        <option value="Coleman">Coleman</option>
+        <option value="Brown">Brown</option>
+        <option value="Bordner">Bordner</option>
+        <option value="Hopson">Hopson</option>
+
+</select>
+
+  <label for="Title">Title</label>
+<select id="Title" name="title" value="Title">
+
+        <option value="Owner">Owner</option>
+        <option value="Manager">Manager</option>
+        <option value="Finance">Finance</option>
+        <option value="Part/Service">Parts/Service</option>
+        <option value="Sales">Sales</option>
+
+</select>
+
+      <label for="LoginId">Login</label>
+<select id="LoginId" name="LoginId" value="LoginId">
+    
+        <option value="00001">00001</option>
+        <option value="00002">00002</option>
+        <option value="00003">00003</option>
+        <option value="00004">00004</option>
+        <option value="00005">00005</option>
+        <option value="00006">00006</option>
+</select>
+
+
+    <input type="submit" value="Update User"/>
+</form>

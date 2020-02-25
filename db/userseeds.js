@@ -1,6 +1,6 @@
 const User = require('../models/user.js');
 
-const newUser = [
+const newUsers = [
     {
         Firstname: 'Clay',
         Lastname: 'Guess',
