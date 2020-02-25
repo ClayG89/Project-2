@@ -1,7 +1,9 @@
-/* body {
+ body {
     font-family: sans-serif;
-}
-
-.issue-show-page {
+    background-image: url("/Users/macbookpro/ga-sei/project-2/public/The-Long-Road-Ahead.jpg");
+    background-size: auto;
+    background-position: center;
+ }
+ .truck-show-page {
     color: blue;
-} */
+}  
