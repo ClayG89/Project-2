@@ -51,7 +51,7 @@ userRouter.get('/', (req, res) => {
 
 userRouter.get('/:userId/edit', (req, res) => {
     User.findById(req.params.userId).then(user => {
-        res.render('user/editUser', { user });
+        res.render('users/editUser', { user });
     });
 });
 
@@ -62,7 +62,7 @@ userRouter.post('/', (req, res) => {
 });
 
 userRouter.put('/:userId', (req, res) => {
-    User.findByIdAndUpdate(req.params.userId, req. body).then(user => {
+    User.findByIdAndUpdate(req.params.userId, req.body).then(user => {
         res.redirect('/users');
     });
 });
