@@ -63,9 +63,7 @@ app.set('view engine', 'hbs')
  * add router for the application to use. The first argument is a prefix to all
  * the paths defined in the router.
  */
-app.use('/', (req, res) => {
-res.render('HomePage')
-})
+
 
 app.use('/trucks', truckRouter)
 
@@ -73,6 +71,9 @@ app.use('/trailers', trailerRouter)
 
 app.use('/users', userRouter)
 
+app.use('/', (req, res) => {
+    res.render('HomePage')
+    })
 /* Step 5
  *
  * Set the port the server is to run on

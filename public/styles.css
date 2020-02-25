@@ -4,9 +4,24 @@
     background-size: cover;
  }
  .peterbiltFirst img {
-    border-radius: 8px;
-    width: 300px;
+    border-radius: 25px;
+    width: 450px;
+    max-height: 320px;
+    padding: 3px;
+ }
+ .happyPeople img {
+    border-radius: 25px;
+    width: 450px;
+    max-height: 320px;
+    padding: 3px;
+ }
+ .trailerTime img {
+    border-radius: 25px;
+    width: 450px;
+    max-height: 320px;
+    padding: 3px;
  }
  .truck-show-page {
     color: blue;
 }  
+
