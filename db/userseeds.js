@@ -10,7 +10,7 @@ const newUser = [
 ];
 
 User.deleteMany().then(() => {
-    return User.create(newUser);
+    return User.create(newUsers);
 }).then(() => {
     console.log('Database seeded');
 });

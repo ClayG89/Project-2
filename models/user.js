@@ -27,7 +27,7 @@ const User = new mongoose.Schema({
         type: String,
         required: true,
     },
-    loginId: {
+    LoginId: {
         type: Number,
         minlength: 5,
         maxlength: 5,
