@@ -4,7 +4,7 @@ const newUsers = [
     {
         Firstname: 'Clay',
         Lastname: 'Guess',
-        title: 'Owner',
+        Title: 'Owner',
         LoginId: '00001',
     },
 ];

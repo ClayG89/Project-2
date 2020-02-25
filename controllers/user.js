@@ -39,6 +39,7 @@ userRouter.get('/new', (req, res) => {
 
 userRouter.get('/:userId', (req, res) => {
     User.findById(req.params.userId).then(user => {
+        console.log(req.params.userId)
         res.render('users/user', { user});
     });
 });
@@ -51,6 +52,7 @@ userRouter.get('/', (req, res) => {
 
 userRouter.get('/:userId/edit', (req, res) => {
     User.findById(req.params.userId).then(user => {
+        console.log(req.params.userId)
         res.render('users/editUser', { user });
     });
 });

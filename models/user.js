@@ -23,7 +23,7 @@ const User = new mongoose.Schema({
         type: String,
         required: true,
     },
-    title: {
+    Title: {
         type: String,
         required: true,
     },
