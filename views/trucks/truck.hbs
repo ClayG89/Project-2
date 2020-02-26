@@ -5,12 +5,15 @@
     <p>{{ truck.color }}</p>
     <p>{{ truck.engine }}</p>
 
+<div class="edit1">
     <a href="/trucks/{{ truck.id }}/edit">Edit truck</a>
+</div>
 
+<div class="truckDelete">
     <form method="POST" action="/trucks/{{ truck.id }}?_method=DELETE">
-        <input type="submit" value="Delete Truck"/>
+        <input class="delbutton1" type="submit" value="Delete Truck"/>
     </form>
-
+</div>
 </div>
 
 
