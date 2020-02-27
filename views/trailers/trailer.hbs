@@ -5,9 +5,13 @@
     <p>{{ trailer.status }}</p>
     <p>{{ trailer.type }}</p>
 
-    <a href="/trailers/{{ trailer.id }}/edit">Edit trailer</a>
+    <div class="edit1">
+        <a href="/trailers/{{ trailer.id }}/edit">Edit trailer</a>
+    </div>
 
-    <form method="POST" action="/trailers/{{ trailer.id }}?_method=DELETE">
-        <input type="submit" value="Delete Trailer"/>
-    </form>
+    <div class="trailerDelete">
+        <form method="POST" action="/trailers/{{ trailer.id }}?_method=DELETE">
+            <input class="delbutton1" type="submit" value="Delete Trailer"/>
+        </form>
+    </div>
 </div>

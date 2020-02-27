@@ -151,7 +151,6 @@
 }
 .truck-show-page {
   max-height: 500px;
-
 }
 .truck-show-page h2{
    display: grid;
@@ -250,6 +249,20 @@
    border: 5px solid rgb(81, 139, 207);
    justify-content: center;
 }
+.trailer-show-page {
+   max-height: 500px;
+ }
+ .trailer-show-page h2{
+   display: grid;
+   justify-content: center;
+   color: white;
+   font-size: 75px;
+}
+.trailerDelete {
+   display: flex;
+   justify-content: center;
+}
+
 .newTrailerHeadline {
    font-size: 100px;
    text-align: center;
@@ -296,6 +309,82 @@
    width: 450px;
 }
 .updateTrailer {
+   display: flex;
+   width: 300px;
+   font-size: 35px;
+   color: rgb(81, 139, 207);
+   background-color: rgba(255, 255, 255, .5);
+   border: 5px solid rgb(81, 139, 207);
+   justify-content: center;
+}
+.addFirst {
+   display: flex;
+   justify-content: center;
+   font-size: 30px;
+   padding: 10px 8px 10px 14px;
+}
+.addFirst #Firstname {
+   display: flex;
+   width: 300px;
+   font-size: 35px;
+   color: rgb(81, 139, 207);
+   background-color: rgba(255, 255, 255, .5);
+   border: 5px solid rgb(81, 139, 207);
+   justify-content: center;
+}
+.addUser h3 {
+   height: 70px;
+   font-size: 80px;
+   text-align: center;
+   color: white;
+   opacity: .7;
+}
+.addLast {
+   display: flex;
+   justify-content: center;
+   font-size: 30px;
+   padding: 10px 8px 10px 14px;
+}
+.addLast #Lastname {
+   display: flex;
+   width: 300px;
+   font-size: 35px;
+   color: rgb(81, 139, 207);
+   background-color: rgba(255, 255, 255, .5);
+   border: 5px solid rgb(81, 139, 207);
+   justify-content: center;
+}
+.addTitle {
+   display: flex;
+   justify-content: center;
+   font-size: 30px;
+   padding: 10px 8px 10px 14px;
+}
+.addTitle #Title {
+   display: flex;
+   width: 300px;
+   font-size: 35px;
+   color: rgb(81, 139, 207);
+   background-color: rgba(255, 255, 255, .5);
+   border: 5px solid rgb(81, 139, 207);
+   justify-content: center;
+}
+.addLogin {
+   display: flex;
+   justify-content: center;
+   font-size: 30px;
+   padding: 10px 8px 10px 14px;
+}
+.addLogin #LoginId {
+   display: flex;
+   width: 300px;
+   font-size: 35px;
+   color: rgb(81, 139, 207);
+   background-color: rgba(255, 255, 255, .5);
+   border: 5px solid rgb(81, 139, 207);
+   justify-content: center;
+}
+.updateStaff {
    display: flex;
    width: 300px;
    font-size: 35px;

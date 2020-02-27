@@ -1,11 +1,30 @@
 <h1>Clay's Commercial Compound</h1>
-<ul>
-{{#each users }}
-    <li><a href="/users/{{ id }}">{{ Firstname }}</a></li>
-    <li><a href="/users/{{ id }}">{{ Lastname }}</a></li>
-    <li><a href="/users/{{ id }}">{{ Title }}</a></li>
-    <li><a href="/users/{{ id }}">{{ LoginId }}</a></li>
-{{/each}}
-</ul>
 
-<a href="/users/new">Create new user</a>
+
+
+{{#each users }}
+<div class="wrapper1">
+    <a href="/users/{{ id }}"><p>{{ Firstname }}</p></a>
+    <a href="/users/{{ id }}"><p>{{ Lastname }}</p></a>
+    <a href="/users/{{ id }}"><p>{{ Title }}</p></a>
+    <a href="/users/{{ id }}"><p>{{ LoginId }}</p></a>
+</div>
+{{/each}}
+
+<div class="wrapper2">
+    <a href="/users/new"><button type="button">New Crew</button></a>
+</div>
+
+<div class="wrapper3">
+    <div class="goHome">
+        <a href="HomePage"> <img src="home-icon.png"/></a>
+    </div>
+
+    <div class="goFast">
+        <a href="trucks"> <img src="truck-Icon.jpg"/></a>
+    </div>
+
+    <div class="goFull">
+        <a href="trailers"> <img src="trailer.gif"/></a>
+    </div>
+</div>

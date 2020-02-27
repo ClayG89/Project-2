@@ -4,9 +4,13 @@
     Template for creating input form for a string object key called stringMember
     NOTE: for numeric input fields use `type="number"`
   --->
-  <label for="Options">Options</label>
-<select id="Options" name="Make" value="Options">
-        
+<div class="optionsHeadline">
+  <h2>Options</h2>
+</div>
+
+<div class="searchTrailers">
+  <div class="selectTrailer">
+    <select id="Options" name="Make" value="Options">  
         <option value="Sahara 2019">Great Dane Sahara 2019</option>
         <option value="Sahara 2020">Great Dane Sahara 2020</option>
         <option value="Champion 2019">Great Dane Champion 2019</option>
@@ -17,22 +21,32 @@
         <option value="Composite 2020">Hyundai Composite 2020</option>
         <option value="Composite XT 2019">Hyundai Composite XT 2019</option>
         <option value="Composite XT 2020">Hyundai Composite XT 2020</option>
-    
+    </select>
+  </div>
+</div>
 
-</select>
-
-    <select name="Status">
+<div class="searchStatus">
+  <div class="selectStatus">
+    <select id="Status" name="Status">
         <option value="Available">Available</option>
         <option value="Not available">Not available</option>
         <option value="Coming soon">Coming soon</option>
     </select>
+  </div>
+</div>
     
-    <select name="Type">
+<div class="searchType">
+  <div class="selectType">
+    <select id="Type" name="Type">
         <option value="Van">Van</option>
         <option value="Flatbed">Flatbed</option>
         <option value="Reefer">Reefer</option>
     </select>
+  </div>
+</div>
 
+<div class="updateButton">
+    <input class="updateTrailer" type="submit" value="Add Trailer"/>
+</div>
 
-    <input type="submit" value="Update Trailer"/>
 </form>

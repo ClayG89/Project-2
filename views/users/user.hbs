@@ -5,10 +5,13 @@
     <p>{{ user.Title }}</p>
     <p>{{ user.LoginId }}</p>
     
+    <div class="edit1">
+        <a href="/users/{{ user.id }}/edit">Edit user</a>
+    </div>
 
-    <a href="/users/{{ user.id }}/edit">Edit user</a>
-
-    <form method="POST" action="/users/{{ user.id }}?_method=DELETE">
-        <input type="submit" value="Delete User"/>
-    </form>
-</div>
+    <div class="truckDelete">
+        <form method="POST" action="/users/{{ user.id }}?_method=DELETE">
+            <input class="delbutton1" type="submit" value="Delete User"/>
+        </form>
+    </div>
+</div>    
