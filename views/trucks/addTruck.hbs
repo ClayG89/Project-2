@@ -4,10 +4,13 @@
     Template for creating input form for a string object key called stringMember
     NOTE: for numeric input fields use `type="number"`
   --->
-  <label for="Options">Options</label>
-<select id="Options" name="Make" value="Options">
-        
-    
+  <div class="newTruckHeadline">
+    <h2>New Trucks</h2>
+  </div>
+  
+<div class="searchTrucks">
+  <div class="selectTruck">
+  <select id="Options" name="Make" value="Options">         
         <option value="579 2020">Peterbilt 579 2020</option>
         <option value="579 2021">Peterbilt 579 2021</option>
         <option value="389 2020">Peterbilt 389 2020</option>
@@ -16,28 +19,44 @@
         <option value="T680 2021">Kenworth T680 2021</option>
         <option value="W990 2020">Kenworth W990 2020</option>
         <option value="W990 2021">Kenworth W990 2021</option>
+  </select>
+  </div>
+</div>
 
-</select>
-
-    <select name="Color">
+<div class="searchColor">
+  <div class="selectColor">
+    <select id="Color" name="Color">
         <option value="White">White</option>
         <option value="Black">Black</option>
         <option value="Red">Red</option>
         <option value="Blue">Blue</option>
         <option value="Yellow">Yellow</option>
     </select>
+  </div>
+</div>
 
-    <select name="Status">
+<div class="searchStatus">
+  <div class="selectStatus">
+    <select id="Status" name="Status">
         <option value="Available">Available</option>
         <option value="Not available">Not available</option>
         <option value="Coming soon">Coming soon</option>
     </select>
+  </div>
+</div>
     
-    <select name="Engine">
+<div class="searchEngine">
+  <div class="selectEngine">
+    <select id="Engine" name="Engine">
         <option value="Cummins">Cummins</option>
         <option value="Paccar">Paccar</option>
         <option value="Detroit">Detroit</option>
     </select>
+    </div>
+</div>
 
-    <input type="submit" value="Add Truck"/>
+<div class="updateButton">
+    <input class="updateTruck" type="submit" value="Add Truck"/>
+</div>
+
 </form>

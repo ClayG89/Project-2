@@ -1,10 +1,29 @@
 <h1>Clay's Commercial Compound</h1>
-<ul>
-{{#each trailers }}
-    <li><a href="/trailers/{{ id }}">{{ Make }}</a></li>
-    <li><a href="/trailers/{{ id }}">{{ Status}}</a></li>
-    <li><a href="/trailers/{{ id }}">{{ Type }}</a></li>
-{{/each}}
-</ul>
 
-<a href="/trailers/new">Create new trailers</a>
+
+
+{{#each trailers }}
+<div class="wrapper1"
+    <a href="/trailers/{{ id }}"><p>{{ Make }}</p></a>
+    <a href="/trailers/{{ id }}"><p>{{ Status}}</p></a>
+    <a href="/trailers/{{ id }}"><p>{{ Type }}</p></a>
+</div>
+{{/each}}
+
+<div class="wrapper2">
+    <a href="/trailers/new"><button type="button">Create new trailer</button></a>
+</div>
+
+<div class="wrapper3">
+    <div class="goHome">
+        <a href="HomePage"> <img src="home-icon.png"/></a>
+    </div>
+
+    <div class="goTeam">
+        <a href="users"> <img src="goodPeople.jpg"/></a>
+    </div>
+
+    <div class="goFast">
+        <a href="trucks"> <img src="truck-Icon.jpg"/></a>
+    </div>
+</div>
