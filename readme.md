@@ -44,3 +44,6 @@ Wireframe Link
 
 ERD link.
 /Users/macbookpro/ga-sei/project-2/public/Project 2 erd.png
+
+Trello.
+https://trello.com/b/T0nqkCP1/project-2
