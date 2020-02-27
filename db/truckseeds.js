@@ -1,5 +1,8 @@
 const Truck = require('../models/truck.js');
 
+let defaultOption = ("#Options").valueOf();
+
+
 const newTrucks = [
     {
         make: 'Peterbilt',
