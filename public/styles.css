@@ -250,6 +250,58 @@
    border: 5px solid rgb(81, 139, 207);
    justify-content: center;
 }
-
-
+.newTrailerHeadline {
+   font-size: 100px;
+   text-align: center;
+   color: white;
+   opacity: .7;
+}
+.selectTrailer {
+   display: flex;
+   justify-content: center;
+   font-size: 30px;
+   padding: 10px 8px 10px 14px;
+}
+.selectTrailer #Options {
+   font-size: 35px;
+   border: 5px solid white;
+   background-color: rgba(81, 139, 207, .5);
+   color: white;
+   width: 450px;
+}
+.selectStatus {
+   display: flex;
+   justify-content: center;
+   font-size: 30px;
+   padding: 10px 8px 10px 14px;
+}
+.selectStatus #Status {
+   font-size: 35px;
+   border: 5px solid white;
+   background-color: rgba(81, 139, 207, .5);
+   color: white;
+   width: 450px;
+}
+.selectType {
+   display: flex;
+   justify-content: center;
+   font-size: 30px;
+   padding: 10px 8px 10px 14px;
+}
+.selectType #Type {
+   font-size: 35px;
+   border: 5px solid white;
+   background-color: rgba(81, 139, 207, .5);
+   color: white;
+   width: 450px;
+}
+.updateTrailer {
+   display: flex;
+   width: 300px;
+   font-size: 35px;
+   color: rgb(81, 139, 207);
+   background-color: rgba(255, 255, 255, .5);
+   border: 5px solid rgb(81, 139, 207);
+   justify-content: center;
+}
 
