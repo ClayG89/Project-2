@@ -8,3 +8,7 @@ all request handlers that start with `shops/` should go in `./shops.js`.
 
 See the `./template.js` file for a template controller file. Feel free to copy `template.js`
 when creating new controllers and complete all steps labeled `TODO`
+
+Wireframe link.
+
+/Users/macbookpro/ga-sei/project-2/public/Project 2 wireframe.png
