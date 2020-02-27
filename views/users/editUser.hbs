@@ -1,24 +1,34 @@
 <form method="POST" action="/users/{{ user.id }}?_method=PUT">
-
+<div class="addUser">
   <!--
     Template for creating input form for a string object key called stringMember
     NOTE: for numeric input fields use `type="number"`
   --->
-  <label for="Firstname">First Name</label>
+  <h3>First Name</h3>
 
-<input id="Firstname" name="Firstname" type="text" value="{{ user.Firstname}}"/>
+<div class="addFirst">
+  <input id="Firstname" name="Firstname" type="text" value="{{ user.Firstname}}"/>
+</div>
 
-  <label for="Lastname">Last name</label>
+<h3>Last Name</h3>
 
-<input id="Lastname" name="Lastname" type="text" value="{{ user.Lastname}}"/>
+<div class="addLast">
+  <input id="Lastname" name="Lastname" type="text" value="{{ user.Lastname}}"/>
+</div>
 
-  <label for="Title">Title</label>
+<h3>Title</h3>
+<div class="addTitle">
+  <input id="Title" name="Title" type="text" value="{{ user.Title}}"/>
+</div>
 
-<input id="Title" name="Title" type="text" value="{{ user.Title}}"/>
+ <h3>LoginID</h3>
+ 
+<div class="addLogin">
+  <input id="LoginId" name="LoginId" type="text" value="{{ user.LoginId}}"/>
+</div>
 
-      <label for="LoginId">Login</label>
-
-<input id="LoginId" name="LoginId" type="text" value="{{ user.LoginId}}"/>
-    
-    <input type="submit" value="Update User"/>
+<div class="updateButton">
+    <input class="updateStaff" type="submit" value="Add Staff"/>
+</div>
+</div>   
 </form>
