@@ -15,7 +15,7 @@ const express = require('express')
  * controller you need.
  * 
  */
-const User = require('../models/User.js')
+const User = require('../models/user.js')
 
 
 /* Step 3 
