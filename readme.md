@@ -38,3 +38,6 @@ following:
 1. `npm install express hbs method-override`
 1. `mkdir models views controllers`
 1. `touch ./server.js`
+
+Wireframe Link
+/Users/macbookpro/ga-sei/project-2/public/Project 2 wireframe.png
