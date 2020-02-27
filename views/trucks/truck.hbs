@@ -1,19 +1,19 @@
 <div class="truck-show-page">
-    <h2>Current truck</h2>
-    <p>{{ truck.make }}</p>
-    <p>{{ truck.status }}</p>
-    <p>{{ truck.color }}</p>
-    <p>{{ truck.engine }}</p>
+     <h2>Current truck</h2>
+     <p>{{ truck.make }}</p>
+     <p>{{ truck.status }}</p>
+     <p>{{ truck.color }}</p>
+     <p>{{ truck.engine }}</p>
 
-<div class="edit1">
-    <a href="/trucks/{{ truck.id }}/edit">Edit truck</a>
-</div>
+    <div class="edit1">
+        <a href="/trucks/{{ truck.id }}/edit">Edit truck</a>
+    </div>
 
-<div class="truckDelete">
-    <form method="POST" action="/trucks/{{ truck.id }}?_method=DELETE">
-        <input class="delbutton1" type="submit" value="Delete Truck"/>
-    </form>
-</div>
+    <div class="truckDelete">
+        <form method="POST" action="/trucks/{{ truck.id }}?_method=DELETE">
+            <input class="delbutton1" type="submit" value="Delete Truck"/>
+        </form>
+    </div>
 </div>
 
 
