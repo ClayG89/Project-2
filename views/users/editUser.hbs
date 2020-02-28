@@ -1,34 +1,31 @@
 <form method="POST" action="/users/{{ user.id }}?_method=PUT">
-<div class="addUser">
-  <!--
-    Template for creating input form for a string object key called stringMember
-    NOTE: for numeric input fields use `type="number"`
-  --->
-  <h3>First Name</h3>
+  <div class="addUser">
 
-<div class="addFirst">
-  <input id="Firstname" name="Firstname" type="text" value="{{ user.Firstname}}"/>
-</div>
+    <h3>First Name</h3>
 
-<h3>Last Name</h3>
+    <div class="addFirst">
+      <input id="Firstname" name="Firstname" type="text" value="{{ user.Firstname}}"/>
+    </div>
 
-<div class="addLast">
-  <input id="Lastname" name="Lastname" type="text" value="{{ user.Lastname}}"/>
-</div>
+    <h3>Last Name</h3>
 
-<h3>Title</h3>
-<div class="addTitle">
-  <input id="Title" name="Title" type="text" value="{{ user.Title}}"/>
-</div>
+    <div class="addLast">
+      <input id="Lastname" name="Lastname" type="text" value="{{ user.Lastname}}"/>
+    </div>
 
- <h3>LoginID</h3>
+    <h3>Title</h3>
+    <div class="addTitle">
+      <input id="Title" name="Title" type="text" value="{{ user.Title}}"/>
+    </div>
+
+    <h3>LoginID</h3>
  
-<div class="addLogin">
-  <input id="LoginId" name="LoginId" type="text" value="{{ user.LoginId}}"/>
-</div>
+    <div class="addLogin">
+      <input id="LoginId" name="LoginId" type="text" value="{{ user.LoginId}}"/>
+    </div>
 
-<div class="updateButton">
-    <input class="updateStaff" type="submit" value="Add Staff"/>
-</div>
-</div>   
+    <div class="updateButton">
+      <input class="updateStaff" type="submit" value="Add Staff"/>
+    </div>
+  </div>   
 </form>
